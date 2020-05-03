@@ -18,9 +18,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('/handfull/lanche')->group(function(){
+/* Route::prefix('/handfull/lanche')->group(function(){
     
-});
+}); */
 
 Route::get('info/php', function(){
     return phpinfo();
