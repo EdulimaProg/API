@@ -15,6 +15,9 @@ class CreateSucosTable extends Migration
     {
         Schema::create('sucos', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->string('valor');
+            $table->string('desc');
             $table->timestamps();
         });
     }

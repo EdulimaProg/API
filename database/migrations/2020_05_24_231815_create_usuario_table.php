@@ -17,7 +17,7 @@ class CreateUsuarioTable extends Migration
             $table->id();
             $table->string('nome');
             $table->String('sobrenome');
-            $table->String('cpf');
+            $table->String('cpf')->unique();
             $table->String('datanasc');
             $table->String('senha');
             $table->timestamps();

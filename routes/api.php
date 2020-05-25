@@ -19,13 +19,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 /* Route::prefix('/handfull/lanche')->group(function(){
-    
+
 }); */
 
 Route::get('info/php', function(){
     return phpinfo();
 });
 
-Route::get('listar/itens', 'HandFullController@listaItens');
+Route::post('login', 'HandFullController@login');
+
+Route::get('listar-sucos', 'HandFullController@lista_sucos');
+Route::get('listar-lanches', 'HandFullController@lista_lanches');
 Route::get('listar/categorias', 'HandFullController@listaCategorias');
-Route::get('cadastro/usuario', 'HandFullController@cadastro');
+Route::post('cadastro/usuario', 'HandFullController@cadastro');

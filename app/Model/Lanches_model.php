@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class lanches_model extends Model
+class Lanches_model extends Model
 {
     /**
      * The table associated with the model.

@@ -1,10 +1,20 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Endereco_Model extends Model
+class Endereco_model extends Model
 {
-    //git init
+    protected $table = 'endereco';
+
+    protected $primaryKey = 'id';
+
+    protected $fillable = [
+        'cep',
+        'rua',
+        'complemento',
+        'numero',
+        'usuario_id'
+    ];
 }

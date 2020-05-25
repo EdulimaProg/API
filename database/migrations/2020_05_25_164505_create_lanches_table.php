@@ -15,6 +15,9 @@ class CreateLanchesTable extends Migration
     {
         Schema::create('lanches', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->string('valor');
+            $table->string('desc');
             $table->timestamps();
         });
     }
