@@ -10,6 +10,14 @@ class HandFullController extends Controller
     public function index(){
         return 'heelo';
     }
+    public function login(Request $request){
+        $user = DB::table('usuario')->select('cpf','senha')->where(
+            ['cpf','=',$request->cpf],
+            ['senha'.'=',$request->senha],
+        );
+
+        dd($user);
+    }
     public function listaItens(){
 
         $itens = DB::table('itens')->get();
