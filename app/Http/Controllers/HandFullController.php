@@ -22,7 +22,7 @@ class HandFullController extends Controller
 
 
 
-        return ConsultaService::randon();
+        return "API Handful";
     }
     public function login(Request $request){
         if ($request->all() == null){
