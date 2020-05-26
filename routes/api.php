@@ -28,7 +28,9 @@ Route::get('info/php', function(){
 
 Route::post('login', 'HandFullController@login');
 
+Route::get('index', 'HandFullController@index');
 Route::get('listar-sucos', 'HandFullController@lista_sucos');
 Route::get('listar-lanches', 'HandFullController@lista_lanches');
 Route::get('listar/categorias', 'HandFullController@listaCategorias');
 Route::post('cadastro/usuario', 'HandFullController@cadastro');
+Route::post('pedido', 'HandFullController@pedido');

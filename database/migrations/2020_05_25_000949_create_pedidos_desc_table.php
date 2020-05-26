@@ -15,9 +15,11 @@ class CreatePedidosDescTable extends Migration
     {
         Schema::create('pedidos_desc', function (Blueprint $table) {
             $table->id();
-            $table->String('numero_pedido');
+            $table->String('numero_pedido');;
             $table->String('valor_pedido');
             $table->String('tipo_pag');
+            $table->unsignedBigInteger('pedidos_id');
+            $table->foreign('pedidos_id')->references('id')->on('pedidos');
             $table->timestamps();
         });
     }
