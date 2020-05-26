@@ -27,15 +27,15 @@ Route::get('info/php', function(){
 });
 
 // rota de login
-Route::post('login', 'HandFullController@login');
+Route::post('login', 'HandAPI\HandFullController@login');
 
-Route::get('index', 'HandFullController@index');
+Route::get('index', 'HandAPI\HandFullController@index');
 //rota de consultas
-Route::get('listar-sucos', 'HandFullController@lista_sucos');
-Route::get('listar-lanches', 'HandFullController@lista_lanches');
+Route::get('listar-sucos', 'HandAPI\HandFullController@lista_sucos');
+Route::get('listar-lanches', 'HandAPI\HandFullController@lista_lanches');
 //Desativado
 //Route::get('listar/categorias', 'HandFullController@listaCategorias');
 //
 // rotas de cadastro de itens e pedidos
-Route::post('cadastro/usuario', 'HandFullController@cadastro');
-Route::post('pedido', 'HandFullController@pedido');
+Route::post('cadastro/usuario', 'HandAPI\HandFullController@cadastro');
+Route::post('pedido', 'HandAPI\HandFullController@pedido');

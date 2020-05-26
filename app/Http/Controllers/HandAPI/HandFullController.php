@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\HandAPI;
 
 use App\Model\Pedidos_model;
 use App\Model\Pedidos_desc_model;
@@ -12,6 +12,7 @@ use App\Model\Lanches_model as lanche;
 use App\Model\Usuario_model;
 use App\Model\Numeros_model;
 use App\Model\Endereco_model;
+use App\Http\Controllers\Controller;
 
 
 
