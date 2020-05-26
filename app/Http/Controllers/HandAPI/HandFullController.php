@@ -20,8 +20,6 @@ class HandFullController extends Controller
     public function index(){
 
 
-
-
         return "API Handful";
     }
     public function login(Request $request){
@@ -155,7 +153,35 @@ class HandFullController extends Controller
         }
 
     }
+    public function pedido(Request $request){
 
+        $ped_desc = new Pedidos_desc_model();
+        $ped = new Pedidos_model();
+
+        $ped->usuario_id = $request->id;
+
+        $ped->save();
+
+        $id = $ped->push();
+
+        $ped_desc->pedidos_id = $id;
+        $ped_desc->numero_pedido = ConsultaService::randon();
+        $ped_desc->valor_pedido = $request->valor;
+        $ped_desc->tipo_pag = $request->pag;
+
+        $ped_desc->save();
+
+        $arr = [
+            'cod' => 200,
+            'mensagem' => 'Pedido Efetuado com Sucesso',
+            'numero_pedido' => $ped_desc->numero_pedido
+        ];
+
+        return response()->json($arr);
+    }
+
+
+    //Rotas de Get and Check information
     public function dados($cpf){
         //dd($cpf);
         $usuario = DB::table('usuario')
@@ -217,31 +243,6 @@ class HandFullController extends Controller
        }
         return false;
     }
-    public function pedido(Request $request){
 
-        $ped_desc = new Pedidos_desc_model();
-        $ped = new Pedidos_model();
-
-        $ped->usuario_id = $request->id;
-
-        $ped->save();
-
-        $id = $ped->push();
-
-        $ped_desc->pedidos_id = $id;
-        $ped_desc->numero_pedido = ConsultaService::randon();
-        $ped_desc->valor_pedido = $request->valor;
-        $ped_desc->tipo_pag = $request->pag;
-
-        $ped_desc->save();
-
-        $arr = [
-            'cod' => 200,
-            'mensagem' => 'Pedido Efetuado com Sucesso',
-            'numero_pedido' => $ped_desc->numero_pedido
-        ];
-
-        return response()->json($arr);
-    }
 }
 
