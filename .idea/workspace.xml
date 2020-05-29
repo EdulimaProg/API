@@ -56,6 +56,11 @@
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="edulimaprog@gmail.com &lt;c@rlos10&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -209,7 +214,16 @@
       <workItem from="1590664765210" duration="3196000" />
       <workItem from="1590689716360" duration="2934000" />
       <workItem from="1590753353991" duration="19429000" />
+      <workItem from="1590784868941" duration="212000" />
     </task>
+    <task id="LOCAL-00001" summary="Adicção da rota de Pagamento, Por enquanto incompeta">
+      <created>1590785071891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590785071891</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +231,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Adicção da rota de Pagamento, Por enquanto incompeta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicção da rota de Pagamento, Por enquanto incompeta" />
   </component>
   <component name="WindowStateProjectService">
     <state x="493" y="276" key="#Composer" timestamp="1590407627647">
