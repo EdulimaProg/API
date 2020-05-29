@@ -19,14 +19,12 @@ use App\Http\Controllers\Controller;
 class HandFullController extends Controller
 {
     public function index(){
-
-
         return "API Handful";
     }
     public function login(Request $request){
         if ($request->all() == null){
             $arr = [
-                "code" => 405,
+                "code" => 404,
                 "messagem" => "Insira as Credenciais para Logar"
             ];
             return response()->json($arr);
@@ -39,7 +37,7 @@ class HandFullController extends Controller
         }else{
             if(HandFullController::check($request->cpf,$request->senha) == false){
                 $arr = [
-                    "code" => 403,
+                    "code" => 401,
                     "messagem" => "CPF ou Senha Incorretos",
                 ];
                 return response()->json($arr);
@@ -121,7 +119,7 @@ class HandFullController extends Controller
 
 
             $numero_fulano->numero_principal = $request->num_principal;
-            $numero_fulano->numero_secundario = $request->num_secundario;
+            $numero_fulano->numero_secundario = $request->num_secundario == null ? null:$request->num_secundario;
             $numero_fulano->usuario_id = $id;
 
             $numero_fulano->save();

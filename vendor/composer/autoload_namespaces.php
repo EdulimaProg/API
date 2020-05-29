@@ -9,4 +9,5 @@ return array(
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Highlight\\' => array($vendorDir . '/scrivo/highlight.php'),
     'HighlightUtilities\\' => array($vendorDir . '/scrivo/highlight.php'),
+    'Getnet' => array($vendorDir . '/brunopazz/getnet-sdk/src'),
 );

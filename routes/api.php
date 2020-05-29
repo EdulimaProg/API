@@ -39,3 +39,6 @@ Route::get('listar-lanches', 'HandAPI\HandFullController@lista_lanches');
 // rotas de cadastro de itens e pedidos
 Route::post('cadastro/usuario', 'HandAPI\HandFullController@cadastro');
 Route::post('pedido', 'HandAPI\HandFullController@pedido');
+
+//Pagamentos
+Route::post('pagamento','PagamentoAPI\PagamentoController@Pagamento');
