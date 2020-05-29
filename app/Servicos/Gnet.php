@@ -83,12 +83,13 @@ class Gnet{
                 "security_code" => $dados_cartao->security_code
             ],
         ]);
+        //hue
         //dd($response->getBody()->getContents());
         $token = json_decode($response->getBody()->getContents());
         return $token;
     }
     public static function efetua_pagamento(){
-        
+
     }
     public static function getUserIP() {
         $ipaddress = '';
