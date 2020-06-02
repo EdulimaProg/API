@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e222c818-5a13-472e-a6e1-0bdfe61f37dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagamentoAPI/PagamentoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagamentoAPI/PagamentoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +36,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Eduardo Lima &lt;edulimaprog@gmail.com&gt;" />
         <option value="edulimaprog@gmail.com &lt;c@rlos10&gt;" />
       </list>
     </option>
@@ -199,7 +196,7 @@
       <workItem from="1590784868941" duration="514000" />
       <workItem from="1591010448851" duration="3265000" />
       <workItem from="1591014737413" duration="19566000" />
-      <workItem from="1591096966625" duration="7713000" />
+      <workItem from="1591096966625" duration="7817000" />
     </task>
     <task id="LOCAL-00001" summary="Adicção da rota de Pagamento, Por enquanto incompeta">
       <created>1590785071891</created>
@@ -229,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591103522371</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Rota de Pagamento concluida">
+      <created>1591105114613</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591105114613</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,10 +270,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1590498588922" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591103508690">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591105107126">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591103508690" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591105107126" />
     <state x="459" y="296" width="447" height="266" key="ComposerInitDialogKey" timestamp="1590417530316">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -302,10 +306,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590514954568" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1590785234108">
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1591105126996">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1590785234108" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1591105126996" />
     <state x="462" y="228" key="cloudConfig.PluginsDialog" timestamp="1590416397397">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

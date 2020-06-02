@@ -82,8 +82,6 @@ class PagamentoController extends Controller
             ]
         ];
 
-        //dd(json_encode($form));
-
         $client = new Client();
 
         $header_req = [
