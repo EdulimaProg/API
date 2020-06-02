@@ -94,8 +94,24 @@ class PagamentoController extends Controller
 
         $url = getenv('API_URL_SANDBOX').'/v1/payments/credit';
 
-        $request = $client->post($url,['headers' => $header_req, 'json' => $form]);
 
-        return response()->json(json_decode($request->getBody()->getContents()));
+        try {
+
+            $request = $client->post($url,['headers' => $header_req, 'json' => $form]);
+
+            $response = $request->getBody()->getContents();
+
+        }catch (RequestException $e){
+
+            $arr = [
+                "nome" => $e->getCode(),
+                "tipo" => "Pagamento Não Autorizado"
+            ];
+
+            $response = json_encode($arr);
+
+        }
+
+        return response()->json(json_decode($response));
     }
 }

@@ -22,8 +22,6 @@
     <list default="true" id="e222c818-5a13-472e-a6e1-0bdfe61f37dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagamentoAPI/PagamentoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagamentoAPI/PagamentoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Servicos/ConsultaService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Servicos/ConsultaService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Servicos/Gnet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Servicos/Gnet.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
@@ -201,7 +199,7 @@
       <workItem from="1590784868941" duration="514000" />
       <workItem from="1591010448851" duration="3265000" />
       <workItem from="1591014737413" duration="19566000" />
-      <workItem from="1591096966625" duration="6179000" />
+      <workItem from="1591096966625" duration="7713000" />
     </task>
     <task id="LOCAL-00001" summary="Adicção da rota de Pagamento, Por enquanto incompeta">
       <created>1590785071891</created>
@@ -224,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590785230407</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rota de Pagamento concluida">
+      <created>1591103522371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591103522371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +250,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Adicção da rota de Pagamento, Por enquanto incompeta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicção da rota de Pagamento, Por enquanto incompeta" />
+    <MESSAGE value="Rota de Pagamento concluida" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rota de Pagamento concluida" />
   </component>
   <component name="WindowStateProjectService">
     <state x="493" y="276" key="#Composer" timestamp="1590407627647">
@@ -260,10 +266,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1590498588922" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590785227453">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591103508690">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1590785227453" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591103508690" />
     <state x="459" y="296" width="447" height="266" key="ComposerInitDialogKey" timestamp="1590417530316">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
