@@ -89,7 +89,6 @@ class Gnet{
         return $token;
     }
     public static function efetua_pagamento(){
-
     }
     public static function getUserIP() {
         $ipaddress = '';
