@@ -16,6 +16,7 @@ class Usuario_model extends Model
         'cpf',
         'datanasc',
         'senha',
+        'email',
         'created_at',
         'update_at'
     ];

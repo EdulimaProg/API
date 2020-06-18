@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e222c818-5a13-472e-a6e1-0bdfe61f37dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HandAPI/HandFullController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HandAPI/HandFullController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagamentoAPI/PagamentoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagamentoAPI/PagamentoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Usuario_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Usuario_model.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +199,13 @@
       <workItem from="1590784868941" duration="514000" />
       <workItem from="1591010448851" duration="3265000" />
       <workItem from="1591014737413" duration="19566000" />
-      <workItem from="1591096966625" duration="7817000" />
+      <workItem from="1591096966625" duration="9982000" />
+      <workItem from="1591117466810" duration="4464000" />
+      <workItem from="1591397529069" duration="1045000" />
+      <workItem from="1591708386848" duration="161000" />
+      <workItem from="1591708692101" duration="4115000" />
+      <workItem from="1592075729713" duration="2234000" />
+      <workItem from="1592502243075" duration="484000" />
     </task>
     <task id="LOCAL-00001" summary="Adicção da rota de Pagamento, Por enquanto incompeta">
       <created>1590785071891</created>
@@ -233,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591105114613</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rota de Pagamento concluida">
+      <created>1591105193303</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591105193303</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +278,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="493" y="276" key="#Composer/0.0.1366.768@0.0.1366.768" timestamp="1590407627647" />
+    <state x="275" y="24" key="#Plugins" timestamp="1591711031739">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="24" key="#Plugins/0.0.1366.768@0.0.1366.768" timestamp="1591711031739" />
+    <state x="363" y="119" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591708526459">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="363" y="119" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1591708526459" />
     <state x="488" y="159" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590427440182">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -270,10 +294,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1590498588922" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591105107126">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591105190181">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591105107126" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591105190181" />
     <state x="459" y="296" width="447" height="266" key="ComposerInitDialogKey" timestamp="1590417530316">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -306,10 +330,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590514954568" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1591105126996">
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1591105198637">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1591105126996" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1591105198637" />
     <state x="462" y="228" key="cloudConfig.PluginsDialog" timestamp="1590416397397">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

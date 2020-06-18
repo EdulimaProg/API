@@ -45,15 +45,15 @@ class PagamentoController extends Controller
         //dd($token_cartao);
         $form = [
             "seller_id"=> getenv('SELLER_ID_SANDBOX'),
-            "amount"=> 100,
+            "amount"=> $request->valor,
             "currency" => "BRL",
             "order"=> [
-                "order_id" => "552881",
+                "order_id" => $request->numero_pedido,
                 "sales_tax" => 0,
                 "product_type" => "service"
             ],
             "customer"=> [
-                "customer_id"=> " ".rand(1000000,9000000)." ",
+                "customer_id"=> $request->id,
                 "billing_address"=> [
                     "street" => "Av. Brasil",
                     "number" => "1000",
@@ -74,10 +74,10 @@ class PagamentoController extends Controller
                 "soft_descriptor"=>"pagamento de plano",
                 "card"=> [
                     "number_token"=> $token_cartao,
-                    "cardholder_name"=> "JOAO DA SILVA",
-                    "security_code"=> "123",
-                    "expiration_month"=> "12",
-                    "expiration_year"=> "20"
+                    "cardholder_name"=> $card['cardholder_name'],
+                    "security_code"=> $card['security_code'],
+                    "expiration_month"=> $card['expiration_month'],
+                    "expiration_year"=> $card['expiration_year']
                 ]
             ]
         ];
@@ -89,9 +89,7 @@ class PagamentoController extends Controller
             "Authorization" => "Bearer ". $bearer,
         ];
 
-
         $url = getenv('API_URL_SANDBOX').'/v1/payments/credit';
-
 
         try {
 

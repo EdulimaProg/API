@@ -106,35 +106,36 @@ class HandFullController extends Controller
         if(count($dado) == 0){
             $fulano = new Usuario_model();
             $fulano->nome = $request->nome;
-            $fulano->sobrenome = $request->sobrenome;
+            $fulano->sobrenome = $request->sobrenome != null ? $request->sobrenome:null;
             $fulano->cpf = $request->cpf;
-            $fulano->datanasc = $request->datanasc;
+            $fulano->datanasc = $request->datanasc ? $request->datanasc:null;
+            $fulano->email = $request->email;
             $fulano->senha = $request->senha;
 
             $fulano->save();
 
-            $id = $fulano->id;
-
-            $numero_fulano = new Numeros_model();
-
-
-            $numero_fulano->numero_principal = $request->num_principal;
-            $numero_fulano->numero_secundario = $request->num_secundario == null ? null:$request->num_secundario;
-            $numero_fulano->usuario_id = $id;
-
-            $numero_fulano->save();
-
-            $end_fulano = new Endereco_model();
-
-            $end = $request->end;
-
-            $end_fulano->cep = $end['cep'];
-            $end_fulano->rua = $end['rua'];
-            $end_fulano->complemento = $end['compl'];
-            $end_fulano->numero = $end['num'];
-            $end_fulano->usuario_id = $id;
-
-            $end_fulano->save();
+//            $id = $fulano->id;
+//
+//            $numero_fulano = new Numeros_model();
+//
+//
+//            $numero_fulano->numero_principal = $request->num_principal;
+//            $numero_fulano->numero_secundario = $request->num_secundario == null ? null:$request->num_secundario;
+//            $numero_fulano->usuario_id = $id;
+//
+//            $numero_fulano->save();
+//
+//            $end_fulano = new Endereco_model();
+//
+//            $end = $request->end;
+//
+//            $end_fulano->cep = $end['cep'];
+//            $end_fulano->rua = $end['rua'];
+//            $end_fulano->complemento = $end['compl'];
+//            $end_fulano->numero = $end['num'];
+//            $end_fulano->usuario_id = $id;
+//
+//            $end_fulano->save();
 
              $arr = [
                  'code' => 200,
