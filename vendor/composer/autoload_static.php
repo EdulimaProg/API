@@ -457,6 +457,7 @@ class ComposerStaticInit9b1ee24d9afecc782d14d300e94493bf
     );
 
     public static $classMap = array (
+        'App\\Combos_model' => __DIR__ . '/../..' . '/app/Model/Combos_model.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
@@ -485,6 +486,7 @@ class ComposerStaticInit9b1ee24d9afecc782d14d300e94493bf
         'App\\Servicos\\ConsultaService' => __DIR__ . '/../..' . '/app/Servicos/ConsultaService.php',
         'App\\Servicos\\Gnet' => __DIR__ . '/../..' . '/app/Servicos/Gnet.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\promo' => __DIR__ . '/../..' . '/app/promo.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',

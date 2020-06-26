@@ -33,6 +33,7 @@ Route::get('index', 'HandAPI\HandFullController@index');
 //rota de consultas
 Route::get('listar-sucos', 'HandAPI\HandFullController@lista_sucos');
 Route::get('listar-lanches', 'HandAPI\HandFullController@lista_lanches');
+Route::get('promo', 'HandAPI\HandFullController@promocoes');
 //Desativado
 //Route::get('listar/categorias', 'HandFullController@listaCategorias');
 //

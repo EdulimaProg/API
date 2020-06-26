@@ -8,6 +8,7 @@ use App\Servicos\ConsultaService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Model\Sucos_model as suco;
+use App\Model\Promo_model as promo;
 use App\Model\Lanches_model as lanche;
 use App\Model\Usuario_model;
 use App\Model\Numeros_model;
@@ -54,6 +55,26 @@ class HandFullController extends Controller
         }
 
     }
+    public function lista_combos(){
+        $arr = [];
+
+        $itens = suco::all();
+
+        //dd($itens);
+        foreach ($itens as $item){
+            $item_arr = array([
+                'nome' => $item->nome,
+                'valor' => $item->valor,
+                'desc' => $item->desc,
+            ]);
+            //dd($item_arr);
+            array_push($arr, $item_arr[0]);
+        }
+
+        //dd($arr);
+
+        return json_encode($arr);
+    }
     public function lista_sucos(){
 
         $arr = [];
@@ -72,6 +93,27 @@ class HandFullController extends Controller
         }
 
        //dd($arr);
+
+        return json_encode($arr);
+    }
+    public function promocoes(){
+
+        $arr = [];
+
+        $itens = promo::all();
+
+        //dd($itens);
+        foreach ($itens as $item){
+            $item_arr = array([
+                'nome' => $item->nome,
+                'valor' => $item->valor,
+                'desc' => $item->desc,
+            ]);
+            //dd($item_arr);
+            array_push($arr, $item_arr[0]);
+        }
+
+        //dd($arr);
 
         return json_encode($arr);
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsuarioTable extends Migration
+class CreatePromosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class CreateUsuarioTable extends Migration
      */
     public function up()
     {
-        Schema::create('usuario', function (Blueprint $table) {
+        Schema::create('promos', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->String('sobrenome')->nullable();
-            $table->String('cpf')->unique();
-            $table->String('datanasc')->nullable();
-            $table->String('senha');
-            $table->String('email');
+            $table->string('valor');
+            $table->string('desc');
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ class CreateUsuarioTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('usuario');
+        Schema::dropIfExists('promos');
     }
 }
