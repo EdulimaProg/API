@@ -16,18 +16,21 @@ class PagamentoController extends Controller
 {
     public function Pagamento(Request $request){
 
+        //tranforma o cartão em array
         $card = $request->card;
 
-
+        //solicitação a api get net
         $operacao = new Gnet();
+        //geração de numero de pedido
         $code = new ConsultaService();
 
+        //bearer token
         $bearer = $operacao->getToken();
 
         $name_device = $_SERVER['HTTP_USER_AGENT'] != null ? $_SERVER['HTTP_USER_AGENT']:'Desconhecido';
 
         //dd($card);
-
+        //tokenização do cartão
         $token_cartao = $operacao->token_card($bearer, $request->number);
 
         $arr = [
@@ -40,10 +43,11 @@ class PagamentoController extends Controller
 
         //dd($arr['cardholder_name']);
         $ip = $operacao->getUserIP();
-
+        //verificação de cartão
         $veifica_cartao = $operacao->verifica_cartao($token_cartao, json_encode($arr), $bearer);
 
         //dd($token_cartao);
+        //requisição de pagamento
         $form = [
             "seller_id"=> getenv('SELLER_ID_SANDBOX'),
             "amount"=> $request->valor,
@@ -75,14 +79,14 @@ class PagamentoController extends Controller
                 "soft_descriptor"=>"pagamento de plano",
                 "card"=> [
                     "number_token"=> $token_cartao,
-                    "cardholder_name"=> $card['cardholder_name'],
-                    "security_code"=> $card['security_code'],
-                    "expiration_month"=> $card['expiration_month'],
-                    "expiration_year"=> $card['expiration_year']
+                    "cardholder_name"=> $request->cardholder_name,
+                    "security_code"=> $request->security_code,
+                    "expiration_month"=> $request->expiration_month,
+                    "expiration_year"=> $request->expiration_year
                 ]
             ]
         ];
-
+        //solicitação guzzle
         $client = new Client();
 
         $header_req = [

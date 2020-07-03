@@ -22,6 +22,7 @@ class HandFullController extends Controller
     public function index(){
         return "API Handful";
     }
+    //controler login
     public function login(Request $request){
         if ($request->all() == null){
             $arr = [
@@ -55,6 +56,7 @@ class HandFullController extends Controller
         }
 
     }
+    //lista de pedidos
     public function lista_combos(){
         $arr = [];
 
@@ -75,6 +77,7 @@ class HandFullController extends Controller
 
         return json_encode($arr);
     }
+    //lista de sucos
     public function lista_sucos(){
 
         $arr = [];
@@ -96,6 +99,7 @@ class HandFullController extends Controller
 
         return json_encode($arr);
     }
+    //lista de promoçeos
     public function promocoes(){
 
         $arr = [];
@@ -117,6 +121,7 @@ class HandFullController extends Controller
 
         return json_encode($arr);
     }
+    //lista de lanches
     public function lista_lanches(){
 
         $arr = [];
@@ -195,6 +200,7 @@ class HandFullController extends Controller
         }
 
     }
+    //pedidos
     public function pedido(Request $request){
 
         $ped_desc = new Pedidos_desc_model();
@@ -276,6 +282,7 @@ class HandFullController extends Controller
 
         return response()->json($arr);
     }
+    //verificação
     public function check($cpf, $senha){
 
        //dd($cpf,$senha);
