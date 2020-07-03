@@ -38,7 +38,7 @@ class PagamentoController extends Controller
             "security_code" =>  $request->security_code
         ];
 
-        dd($arr['cardholder_name']);
+        //dd($arr['cardholder_name']);
         $ip = $operacao->getUserIP();
 
         $veifica_cartao = $operacao->verifica_cartao($token_cartao, json_encode($arr), $bearer);
