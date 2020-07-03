@@ -1,7 +1,3 @@
-@extends('layouts.inicial')
-
-
-
 @section('title','Home')
 
 @section('css')
@@ -11,7 +7,7 @@
 @section('content')
 
     <div class="centrazilar" id="centrazilar" name="centrazilar">
-        <h3>Hello</h3>
+        <h3 id="data"></h3>
     </div>
 {{--   <div class="center-div">--}}
 {{--       <div class="container">--}}
@@ -41,4 +37,10 @@
 {{--           </div>--}}
 {{--       </div>--}}
 {{--   </div>--}}
+
+    <script>
+        
+    </script>
+
 @endsection
+

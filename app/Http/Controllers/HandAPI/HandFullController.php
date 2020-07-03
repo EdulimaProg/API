@@ -213,6 +213,8 @@ class HandFullController extends Controller
 
         $ped_desc->save();
 
+
+
         $arr = [
             'cod' => 200,
             'mensagem' => 'Pedido Efetuado com Sucesso',

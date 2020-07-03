@@ -28,19 +28,20 @@ class PagamentoController extends Controller
 
         //dd($card);
 
-        $token_cartao = $operacao->token_card($bearer, $card['number']);
+        $token_cartao = $operacao->token_card($bearer, $request->number);
 
         $arr = [
-            "brand" => "Mastercard",
-            "cardholder_name" =>  "JOAO DA SILVA",
-            "expiration_month" =>  "12",
-            "expiration_year" =>  "20",
-            "security_code" =>  "123"
+            "brand" => $request->brand,
+            "cardholder_name" =>  $request->cardholder_name,
+            "expiration_month" =>  $request->expiration_month,
+            "expiration_year" =>  $request->expiration_year,
+            "security_code" =>  $request->security_code
         ];
 
+        dd($arr['cardholder_name']);
         $ip = $operacao->getUserIP();
 
-        $veifica_cartao = $operacao->verifica_cartao($token_cartao, json_encode($card), $bearer);
+        $veifica_cartao = $operacao->verifica_cartao($token_cartao, json_encode($arr), $bearer);
 
         //dd($token_cartao);
         $form = [
@@ -53,7 +54,7 @@ class PagamentoController extends Controller
                 "product_type" => "service"
             ],
             "customer"=> [
-                "customer_id"=> $request->id,
+                "customer_id"=> 01,
                 "billing_address"=> [
                     "street" => "Av. Brasil",
                     "number" => "1000",

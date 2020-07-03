@@ -75,12 +75,12 @@ class Gnet{
                 'seller_id' => getenv('SELLER_ID_SANDBOX')
             ],
             'form_params' => [
-                'number_token' => $number_token,
-                "brand" => $dados_cartao->brand,
-                "cardholder_name" => $dados_cartao->cardholder_name,
-                "expiration_month" => $dados_cartao->expiration_month,
-                "expiration_year" => $dados_cartao->expiration_year,
-                "security_code" => $dados_cartao->security_code
+                'number_token' =>       $number_token,
+                "brand" =>              $dados_cartao->brand,
+                "cardholder_name" =>    $dados_cartao->cardholder_name,
+                "expiration_month" =>   $dados_cartao->expiration_month,
+                "expiration_year" =>    $dados_cartao->expiration_year,
+                "security_code" =>      $dados_cartao->security_code
             ],
         ]);
         //hue
